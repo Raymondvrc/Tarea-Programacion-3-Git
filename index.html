@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro tarea 3</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+    <main>
+
+        <div class="contenedor_todo">
+            <div class="caja_trasera">
+                <div class="caja_trasera-login">
+                    <h3>¿Ya eres miembro?</h3>
+                    <p>Inicia sesión para entrar a tu cuenta</p>
+                    <button id="btn_iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja_trasera-register">
+                    <h3>¿No eres miembro de Lamazon?</h3>
+                    <p>Regístrate para comprar y vender ya!</p>
+                    <button id="btn_registrarse">Registrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor_login-register">
+                <!--Login-->
+                <form id="login-form" class="formulario_login" style="display: none;">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo Electronico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <!--Register-->
+                <form id="register-form" class="formulario_register" style="display: none;">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="text" placeholder="Correo Electronico" required>
+                    <input type="text" placeholder="Usuario" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
